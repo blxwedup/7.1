@@ -46,9 +46,9 @@ int main()
 			v[i] = rand();
 		}
 
-		start = chrono::steady_clock::now();
+		auto start = chrono::steady_clock::now();
 		vstavka(v, k); // Вызов сортировки вставками
-		end = chrono::steady_clock::now();
+		auto end = chrono::steady_clock::now();
 
 		cout << chrono::duration_cast<chrono::milliseconds>(end - start).count() << " ms" << "      ";
 
