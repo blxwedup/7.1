@@ -32,7 +32,7 @@ void vstavka(vector<int> &s, int &n) // сортировка
 int main() 
 {
 	int t = 1000; // Количество тестов
-	cout << "MergeSort   HeapSort   InsertionSort   ShellSort   QuickSort" << endl;
+	cout << "InsertionSort" << endl;
 	while (--t)
 	{
 		srand(time(0));
@@ -50,7 +50,7 @@ int main()
 		vstavka(v, k); // Вызов сортировки вставками
 		auto end = chrono::steady_clock::now();
 
-		cout << chrono::duration_cast<chrono::milliseconds>(end - start).count() << " ms" << "      ";
+		cout << chrono::duration_cast<chrono::milliseconds>(end - start).count() << " ms" << "      " << endl;
 
 		
 	}
